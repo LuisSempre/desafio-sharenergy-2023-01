@@ -58,34 +58,47 @@ const AddEmployee = (props: Props) => {
       <div>
         <h3>Add Employee Form</h3>
       </div>
-      <form onSubmit={onSubmitBtnClickHnd}>
+      <form
+      className=""
+        onSubmit={onSubmitBtnClickHnd}>
         <div>
           <label>First Name : </label>
           <input
             type='text'
             value={firstName}
+            className="border"
             onChange={onFirstNameChangeHnd}
           />
         </div>
         <div>
           <label>Last Name : </label>
-          <input type='text' value={lastName} onChange={onLastNameChangeHnd} />
+          <input type='text' value={lastName}
+            className="border"
+            onChange={onLastNameChangeHnd} />
         </div>
         <div>
           <label>Email Add. : </label>
-          <input type='text' value={email} onChange={onEmailChangeHnd} />
+          <input type='text' value={email}
+            className="border"
+            onChange={onEmailChangeHnd} />
         </div>
         <div>
           <label>Telefone Add. : </label>
-          <input type='text' value={telefone} onChange={onTelefoneChangeHnd} />
+          <input type='text' value={telefone}
+            className="border"
+            onChange={onTelefoneChangeHnd} />
         </div>
         <div>
           <label>Cpf Add. : </label>
-          <input type='text' value={cpf} onChange={onCpfChangeHnd} />
+          <input type='text' value={cpf}
+            className="border"
+            onChange={onCpfChangeHnd} />
         </div>
         <div>
           <label>Endereco Add. : </label>
-          <input type='text' value={endereco} onChange={onEnderecoChangeHnd} />
+          <input type='text' value={endereco}
+            className="border"
+            onChange={onEnderecoChangeHnd} />
         </div>
         <div>
           <input type='button' value='Back' onClick={onBackBtnClickHnd} />

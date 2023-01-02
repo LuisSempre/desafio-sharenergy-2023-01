@@ -59,7 +59,7 @@ const Home = () => {
     <>
       <article className='article-header'>
         <header>
-          <h1>Crud TSX</h1>
+          <h1 className="text-xl">Crud TSX</h1>
         </header>
       </article>
 
@@ -70,7 +70,7 @@ const Home = () => {
               type='button'
               value='Add Employee'
               onClick={onAddEmployeeClickHnd}
-              className='add-employee-btn'
+              className='add-employee-btn bg-red-800 text-white rounded-md'
             />
             <EmployeeList
               list={employeeList}
