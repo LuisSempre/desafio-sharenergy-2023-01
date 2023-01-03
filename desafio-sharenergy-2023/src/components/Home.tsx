@@ -3,7 +3,6 @@ import AddEmployee from "./AddEmployee";
 import EditEmployee from "./EditEmployee";
 import { IEmployee, PageEnum } from "./Employee.type";
 import EmployeeList from "./EmployeeList";
-import "./Home.style.css";
 
 const Home = () => {
   const [employeeList, setEmployeeList] = useState([] as IEmployee[]);
@@ -59,7 +58,7 @@ const Home = () => {
     <>
       <article className='article-header'>
         <header>
-          <h1 className="text-xl">Crud TSX</h1>
+          <h1 className='text-xl'>Crud TSX</h1>
         </header>
       </article>
 

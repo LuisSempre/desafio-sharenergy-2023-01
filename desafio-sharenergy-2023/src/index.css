@@ -2,6 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+td,
+th {
+  @apply border text-left p-2;
+}
+
+input[type="text"] {
+  @apply h-8 pl-8 m-2;
+}
+
+input[type="button"],
+input[type="submit"] {
+  @apply h-8 ml-5;
+}
+
+.modal {
+  @apply fixed z-10 pt-24 left-0 top-0 w-full h-full overflow-auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.article-header {
+  background-color: darkred;
+  color: white;
+  border: 3px solid transparent;
+  text-align: center;
+}
+
+.section-content {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15px;
+}
+
+.add-employee-btn {
+  float: right;
+  margin-bottom: 5px;
+}
+
+.article-header {
+  background-color: darkred;
+  color: white;
+  border: 3px solid transparent;
+  text-align: center;
+}
+
+.section-content {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15px;
+}
+
+.add-employee-btn {
+  float: right;
+  margin-bottom: 5px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

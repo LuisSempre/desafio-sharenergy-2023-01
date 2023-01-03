@@ -1,5 +1,4 @@
 import { IEmployee } from "./Employee.type";
-import "./EmployeeModal.style.css";
 
 type Props = {
   onClose: () => void;

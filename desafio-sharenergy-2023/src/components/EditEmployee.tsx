@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { IEmployee } from "./Employee.type";
-import "./EmployeeForm.style.css";
 
 type Props = {
   data: IEmployee;
@@ -89,8 +88,17 @@ const EditEmployee = (props: Props) => {
           <input type='text' value={endereco} onChange={onEnderecoChangeHnd} />
         </div>
         <div>
-          <input type='button' value='Back' onClick={onBackBtnClickHnd} />
-          <input type='submit' value='Update Employee' />
+          <input
+            type='button'
+            value='Back'
+            onClick={onBackBtnClickHnd}
+            className='bg-red-900 text-white rounded-md'
+          />
+          <input
+            type='submit'
+            value='Update Employee'
+            className='bg-red-900 text-white rounded-md'
+          />
         </div>
       </form>
     </div>

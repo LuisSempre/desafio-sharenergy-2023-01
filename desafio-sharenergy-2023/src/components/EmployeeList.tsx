@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./EmployeeList.style.css";
 import EmployeeModal from "./EmployeeModal";
 import { IEmployee } from "./Employee.type";
 
@@ -24,9 +23,9 @@ const EmployeeList = (props: Props) => {
   return (
     <div>
       <article>
-        <h3 className='list-header'>Employee List</h3>
+        <h3 className='text-left font-bold text-xl'>Employee List</h3>
       </article>
-      <table>
+      <table className='w-full border-collapse'>
         <tr>
           <th>Name</th>
           <th>Email</th>
