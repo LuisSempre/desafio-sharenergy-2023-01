@@ -4,7 +4,7 @@ import EditEmployee from "./EditEmployee";
 import { IEmployee, PageEnum } from "./Employee.type";
 import EmployeeList from "./EmployeeList";
 
-const Home = () => {
+const Clients = () => {
   const [employeeList, setEmployeeList] = useState([] as IEmployee[]);
   const [shownPage, setShownPage] = useState(PageEnum.list);
   const [dataToEdit, setDataToEdit] = useState({} as IEmployee);
@@ -56,12 +56,6 @@ const Home = () => {
 
   return (
     <>
-      <article className='article-header'>
-        <header>
-          <h1 className='text-xl'>Crud TSX</h1>
-        </header>
-      </article>
-
       <section className='section-content'>
         {shownPage === PageEnum.list && (
           <>
@@ -98,4 +92,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Clients;

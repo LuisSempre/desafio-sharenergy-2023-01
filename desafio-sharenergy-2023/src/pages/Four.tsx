@@ -1,11 +1,11 @@
-import Home from "../components/Home";
+import Clients from "../components/Clients";
 import Navbar from "../components/Navbar";
 
 export default function Index() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Clients />
     </>
   );
 }
