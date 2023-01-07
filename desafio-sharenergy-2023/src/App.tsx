@@ -3,7 +3,6 @@ import Four from "./pages/Four";
 import Home from "./pages/Home";
 import Two from "./pages/Two";
 import Three from "./pages/Three";
-import { useContext } from "react";
 
 export default function App() {
   return (
