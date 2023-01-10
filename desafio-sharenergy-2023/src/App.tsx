@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Four from "./pages/Four";
 import Home from "./pages/Home";
-import Two from "./pages/Two";
-import Three from "./pages/Three";
+import PageCats from "./pages/PageCats";
+import Dogs from "./components/Dogs";
+import Clients from "./components/Clients";
 
 export default function App() {
   return (
@@ -11,9 +11,9 @@ export default function App() {
         <div className='pt-20'>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/Two' element={<Two />} />
-            <Route path='/Three' element={<Three />} />
-            <Route path='/four' element={<Four />} />
+            <Route path='/pagecats' element={<PageCats />} />
+            <Route path='/pagedogs' element={<Dogs />} />
+            <Route path='/pageclients' element={<Clients />} />
           </Routes>
         </div>
       </Router>
